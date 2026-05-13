@@ -420,6 +420,8 @@ const TABS = [
   { id: "education", label: "Edukasi", icon: GraduationCap },
 ] as const;
 
+export { Index as IndexPage };
+
 function Index() {
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<typeof TABS[number]["id"]>("overview");
